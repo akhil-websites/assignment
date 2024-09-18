@@ -1,0 +1,319 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%
+}
+
+.header-content .logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.card-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #003366;
+    text-align: center;
+    padding: 10px;
+}
+.btn{
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* Sidebar Toggle Button */
+.floating-arrow {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.floating-arrow button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 18px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #333;
+    color: white;
+    width: 250px;
+    height: 50vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: 0.3s;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Main Container */
+.main-container {
+    margin-left: 390px;
+    padding: 30px;
+    width: 1250px;
+    transition: margin-left 0.3s;
+}
+
+/* Top Section Styles */
+.top-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #003366;
+    margin-bottom: 20px;
+}
+
+.top-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.top-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.top-section button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    background: white;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.thread {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.thread-header h2 {
+    margin: 0;
+}
+
+.sub-thread {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.sub-thread input[type="text"] {
+    flex: 1;
+    padding: 8px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.actions button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.summary textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    height: 100px;
+}
+
+.summary textarea::placeholder {
+    color: #666;
+}
+
+
+/* Card Styles */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding: 30px;
+}
+
+.card {
+    background-color: white;
+   
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 420px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+
+.card h3 {
+    font-size: 25px;
+    color: #fff;
+    background: #003366;
+    height: 40px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card p {
+    margin-bottom: 50px;
+}
+
+.card iframe {
+    width: 100%;
+    height: 180px;
+}
+
+.card input[type="text"], 
+.card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.card button {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Floating Help Button Styles */
+.floating-help {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-help button {
+    background-color: #003366;
+    color: white;
+    width: 60px; /* Set width */
+    height: 60px; /* Set height to the same as width */
+    border: none;
+    border-radius: 50%; /* Make the button circular */
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text/icon inside the button */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        left: -100%;
+    }
+
+    .floating-arrow {
+        display: block;
+    }
+
+    .main-container {
+        margin-left: 0;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}

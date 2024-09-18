@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management - Deep Thought</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo.png" alt=""><h1>DEEP THOUGHT</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="card-title">
+        <h2>Technical Project Management</h2>    <button class="btn">Submit Task</button>
+    
+    </div>
+    <!-- Floating Sidebar Toggle Button -->
+    <div class="floating-arrow">
+        <button id="toggle-sidebar">➤</button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <h2>Journey Board</h2>
+        <ul>
+            <li>* Explore the world of management</li>
+            <li>* Technical Project Management</li>
+            <li>* Threadbuild</li>
+            <li>* Structure your pointers</li>
+            <li>* 4SA Method</li>
+        </ul>
+    </aside>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Top Section -->
+        <div class="top-section">
+           <h2>Explore the world of Management</h2>
+            <p>As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring, controlling, and completion. How do you want to manage each and every aspect of your life?</p>
+            
+        </div>
+
+        <!-- Card Section -->
+        <div class="card-container">
+            <!-- Video Card -->
+            <div class="card video-card">
+                <h3>Technical Project Management</h3>
+                <p><h4>Description :</h4>  Story of Alignment Scope of Agility Specific Teaching Approach</p>
+                <iframe src="https://www.youtube.com/embed/XUBHmNTzpmk?si=aO3ebNYPGHTcb1VV" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <!-- Threadbuild Card -->
+            <div class="card thread-card">
+                <h3>Threadbuild</h3>
+                <p> <h4>Description :</h4> Watch the video and thread build, jot out key threads while watching the video.</p>
+                <input type="text" placeholder="Sub Thread 1">
+                <input type="text" placeholder="Sub Interpretation">
+                <button>Submit Thread</button>
+            </div>
+
+            <!-- Structure your Pointers Card -->
+            <div class="card pointers-card">
+                <h3>Structure your Pointers</h3>
+                <p><h4>Description :</h4> Write a 300-400 word article from your thread. Publish your understanding and showcase your learning to the entire world.</p>
+                <input type="text" placeholder="Title">
+                <textarea placeholder="Enter content here"></textarea>
+                <button>Submit</button>
+            </div>
+
+            <!-- 4SA Method Card -->
+            <div class="card method-card">
+                <h3>4SA Method</h3>
+                <p><h4>Description :</h4>  To Explore more, read more.</p>
+                <textarea placeholder="Enter your strategy here"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Help Buttons -->
+    <div class="floating-help">
+        <button>?</button>
+        <button>Chat</button>
+        <button>Forum</button>
+    </div>
+
+    <script>
+        // JavaScript to toggle sidebar
+        const toggleSidebar = document.getElementById('toggle-sidebar');
+        const sidebar = document.getElementById('sidebar');
+
+        toggleSidebar.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
